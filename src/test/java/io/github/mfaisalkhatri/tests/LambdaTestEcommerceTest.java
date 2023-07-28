@@ -14,7 +14,7 @@ public class LambdaTestEcommerceTest extends BaseTest{
         final var mainPage = new MainPage();
         mainPage.openShopByCategoryMenu();
         final var blogPage = mainPage.navigateToBlogs();
-        Thread.sleep(2000);
+//        Thread.sleep(2000);
         assertEquals(blogPage.pageHeader(), "LATEST ARTICLES");
     }
 

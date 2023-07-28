@@ -36,12 +36,10 @@ public class LoginPage {
     }
 
     public ProductPage login(final String email, final String password) {
-       // waitForSnackBarToDisappear();
+        waitForSnackBarToDisappear(); //Comment this and element click intercepted exception will be thrown
         emailField().sendKeys(email);
         passwordField().sendKeys(password);
-        final Actions actions = new Actions(getDriver());
-        actions.moveToElement(loginBtn()).click().build().perform();
-        //loginBtn().click();
+        loginBtn().click();
         return new ProductPage();
     }
 
