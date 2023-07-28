@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Selenium WebDriver Element click interception exception tests ">
+    <test name="Juice Shop automation tests " enabled="false">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="io.github.mfaisalkhatri.tests.JuiceShopTests">
+                <methods>
+                    <include name="testAddProductToBasket"/>
+                </methods>
+            </class>
+        </classes>
+    </test> <!-- Test -->
+    <test name="LambdaTest website automation tests " enabled="false">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="io.github.mfaisalkhatri.tests.LambdaTestWebSiteTests">
+                <methods>
+                    <include name="testHomePage"/>
+                </methods>
+            </class>
+        </classes>
+    </test> <!-- Test -->
+    <test name="LambdaTest E-Commerce website automation tests " enabled="false">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="io.github.mfaisalkhatri.tests.LambdaTestEcommerceTest">
+                <methods>
+                    <include name="testMainPage"/>
+                    <include name="testLoginPage"/>
+                </methods>
+            </class>
+        </classes>
+    </test> <!-- Test -->
+    <test name="UITestingPlayground Website tests" >
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="io.github.mfaisalkhatri.tests.UITestingPlaygroundTests">
+                <methods>
+                    <include name="testOverLappingElement"/>
+                </methods>
+            </class>
+        </classes>
+    </test> <!-- Test -->
+
+</suite> <!-- Suite -->
