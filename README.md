@@ -4,7 +4,7 @@
 
 ## :question: What is this Repository about?
 
-- This repo contains automation tests for handling the _ElementClickInterceptionException_ using Selenium WebDriver 4.
+- This repo contains automation tests for handling the _ElementClickInterceptedException_ using Selenium WebDriver 4.
 - This repo uses Maven as build tool and TestNG testing framework to run the tests.
 - The following websites have been used to demo out scenarios for handling the _ElementClickInterceptionException_ in multiple ways.
   - [LambdaTest.com](https://www.lambdatest.com)
@@ -12,7 +12,7 @@
   - [UITestingPlayground](http://www.uitestingplayground.com/overlapped)
   - [OWASP Juice Shop](https://juice-shop.herokuapp.com/#/)
 
-## Examples covered in this repository for handling _ElementClickInterceptionException_
+## Examples covered in this repository for handling _Element Click Intercepted Exception_
 
 1. Using Explicit waits in Selenium WebDriver
 2. Using JavaScriptExecutor to click on the web element
