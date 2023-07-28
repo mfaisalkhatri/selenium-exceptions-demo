@@ -15,7 +15,6 @@ public class LambdaTestWebSiteTests extends BaseTest {
         final HomePage homePage = new HomePage();
         // homePage.clickOnVideoLink(); Throws ElementClickInterceptionException
         homePage.clickOnVideoLinkUsingJSExecutor();
-
         assertTrue(homePage.videoCloseBtn().isDisplayed());
     }
 }

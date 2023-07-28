@@ -8,14 +8,13 @@ import static org.testng.Assert.assertEquals;
 
 public class UITestingPlaygroundTests extends BaseTest{
 
-
     @Test
     public void testOverLappingElement() {
         getDriver().get("http://www.uitestingplayground.com/overlapped");
 
         final var overLapElementPage = new OverLapElementPage();
-        String id = "ID7763";
-        String name = "Faisal K";
+        final String id = "ID7763";
+        final String name = "Faisal K";
         overLapElementPage.fillForm(id, name);
 
         assertEquals(overLapElementPage.textInNameField(), name);
