@@ -47,7 +47,7 @@ public class DriverManager {
         final ChromeOptions options = new ChromeOptions ();
         options.addArguments ("--no-sandbox");
         options.addArguments ("--disable-dev-shm-usage");
-        options.addArguments ("--window-size=1050,650");
+        options.addArguments ("--window-size=1050,600");
         driver = new ChromeDriver(options);
        // driver.manage().window().maximize();
     }

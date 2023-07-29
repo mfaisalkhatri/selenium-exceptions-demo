@@ -2,17 +2,18 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Selenium WebDriver Element click interception exception tests ">
     <test name="Juice Shop automation tests ">
-        <parameter name="browser" value="remote-chrome"/>
+        <parameter name="browser" value="chrome"/>
         <classes>
             <class name="io.github.mfaisalkhatri.tests.JuiceShopTests">
                 <methods>
+                    <include name="testLogin"/>
                     <include name="testAddProductToBasket"/>
                 </methods>
             </class>
         </classes>
     </test> <!-- Test -->
     <test name="LambdaTest website automation tests ">
-        <parameter name="browser" value="remote-chrome"/>
+        <parameter name="browser" value="chrome"/>
         <classes>
             <class name="io.github.mfaisalkhatri.tests.LambdaTestWebSiteTests">
                 <methods>
@@ -32,8 +33,8 @@
             </class>
         </classes>
     </test> <!-- Test -->
-    <test name="UITestingPlayground Website tests" >
-        <parameter name="browser" value="remote-chrome"/>
+    <test name="UITestingPlayground Website tests">
+        <parameter name="browser" value="chrome"/>
         <classes>
             <class name="io.github.mfaisalkhatri.tests.UITestingPlaygroundTests">
                 <methods>

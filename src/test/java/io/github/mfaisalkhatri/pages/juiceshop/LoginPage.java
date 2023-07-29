@@ -36,10 +36,9 @@ public class LoginPage {
     }
 
     public ProductPage login(final String email, final String password) {
-        waitForSnackBarToDisappear(); //Comment this and element click intercepted exception will be thrown
         emailField().sendKeys(email);
         passwordField().sendKeys(password);
-        loginBtn().click();
+        clickLoginBtn();
         return new ProductPage();
     }
 
@@ -50,5 +49,10 @@ public class LoginPage {
 
     public void openAccountMenu () {
         this.homePage.accountLink().click();
+    }
+
+    public void clickLoginBtn() {
+        waitForSnackBarToDisappear();
+        loginBtn().click();
     }
 }

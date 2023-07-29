@@ -1,6 +1,7 @@
 package io.github.mfaisalkhatri.tests;
 
 import io.github.mfaisalkhatri.pages.uitestingplayground.OverLapElementPage;
+import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
 import static io.github.mfaisalkhatri.setup.DriverManager.getDriver;

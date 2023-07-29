@@ -15,10 +15,12 @@ public class ProductPage {
         return getDriver().findElement(
                 By.cssSelector(".cdk-overlay-backdrop.cdk-overlay-transparent-backdrop.cdk-overlay-backdrop-showing"));
     }
-
-
     public void addAppleJuiceToCart() {
-        overlay().click(); //click overlay to close it.
+        overlay().click();
         appleJuiceAddToBasketBtn().click();
+    }
+
+    public String itemsInBasket() {
+        return getDriver().findElement(By.cssSelector("span.warn-notification")).getAttribute("innerText");
     }
 }
