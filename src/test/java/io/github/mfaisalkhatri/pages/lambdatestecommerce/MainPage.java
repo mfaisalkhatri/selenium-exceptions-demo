@@ -23,7 +23,6 @@ public class MainPage {
         return getDriver().findElement(By.linkText("Blog"));
     }
     public BlogPage navigateToBlogs() {
-        //        blogLink().click();  elementclickinterceptedexception
         final Actions actions = new Actions(getDriver());
         actions.moveToElement(menuBar()).click().build().perform();
         blogLink().click();

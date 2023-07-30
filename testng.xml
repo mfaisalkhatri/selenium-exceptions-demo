@@ -1,11 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Selenium WebDriver Element click interception exception tests ">
+    <test name="LambdaTest E-Commerce website automation tests ">
+        <parameter name="browser" value="remote-chrome"/>
+        <classes>
+            <class name="io.github.mfaisalkhatri.tests.LambdaTestEcommerceTest">
+                <methods>
+                    <include name="testNavigationToBlogsMenu"/>
+                </methods>
+            </class>
+        </classes>
+    </test> <!-- Test -->
+    <test name="UITestingPlayground Website tests">
+        <parameter name="browser" value="remote-chrome"/>
+        <classes>
+            <class name="io.github.mfaisalkhatri.tests.UITestingPlaygroundTests">
+                <methods>
+                    <include name="testOverLappingElement"/>
+                </methods>
+            </class>
+        </classes>
+    </test> <!-- Test -->
     <test name="Juice Shop automation tests ">
         <parameter name="browser" value="remote-chrome"/>
         <classes>
             <class name="io.github.mfaisalkhatri.tests.JuiceShopTests">
                 <methods>
+                    <include name="testLogin"/>
                     <include name="testAddProductToBasket"/>
                 </methods>
             </class>
@@ -21,25 +42,4 @@
             </class>
         </classes>
     </test> <!-- Test -->
-    <test name="LambdaTest E-Commerce website automation tests ">
-        <parameter name="browser" value="remote-chrome"/>
-        <classes>
-            <class name="io.github.mfaisalkhatri.tests.LambdaTestEcommerceTest">
-                <methods>
-                    <include name="testMainPage"/>
-                    <include name="testLoginPage"/>
-                </methods>
-            </class>
-        </classes>
-    </test> <!-- Test -->
-    <test name="UITestingPlayground Website tests" >
-        <parameter name="browser" value="remote-chrome"/>
-        <classes>
-            <class name="io.github.mfaisalkhatri.tests.UITestingPlaygroundTests">
-                <methods>
-                    <include name="testOverLappingElement"/>
-                </methods>
-            </class>
-        </classes>
-    </test> <!-- Test -->
-</suite> <!-- Suite -->
+</suite>
