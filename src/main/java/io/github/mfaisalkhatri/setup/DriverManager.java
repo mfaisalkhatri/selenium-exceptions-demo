@@ -47,7 +47,7 @@ public class DriverManager {
         final ChromeOptions options = new ChromeOptions ();
         options.addArguments ("--no-sandbox");
         options.addArguments ("--disable-dev-shm-usage");
-        options.addArguments ("--window-size=1050,600");
+        options.addArguments ("--window-size=1050,650");
         driver = new ChromeDriver(options);
        // driver.manage().window().maximize();
     }
@@ -68,6 +68,7 @@ public class DriverManager {
         ltOptions.put ("username", LT_USERNAME);
         ltOptions.put ("accessKey", LT_ACCESS_TOKEN);
         ltOptions.put ("selenium_version", "4.0.0");
+        ltOptions.put("resolution", "1366x768");
         ltOptions.put ("build", "Selenium WebDriver Element click interception exception tests");
         ltOptions.put ("w3c", true);
         ltOptions.put ("plugin", "java-testNG");
@@ -76,7 +77,7 @@ public class DriverManager {
             driver = new RemoteWebDriver(
                     new URL(format("https://{0}:{1}{2}", LT_USERNAME, LT_ACCESS_TOKEN, GRID_URL)), browserOptions);
         } catch (final MalformedURLException e) {
-            throw new Error(e);
+            throw new Error("Error while setting remote driver",e);
         }
     }
 

@@ -15,6 +15,7 @@ public class ProductPage {
         return getDriver().findElement(
                 By.cssSelector(".cdk-overlay-backdrop.cdk-overlay-transparent-backdrop.cdk-overlay-backdrop-showing"));
     }
+
     public void addAppleJuiceToCart() {
         overlay().click();
         appleJuiceAddToBasketBtn().click();

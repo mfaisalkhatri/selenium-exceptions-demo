@@ -6,15 +6,14 @@ import org.testng.annotations.Test;
 import static io.github.mfaisalkhatri.setup.DriverManager.getDriver;
 import static org.testng.Assert.assertEquals;
 
-public class LambdaTestEcommerceTest extends BaseTest{
+    public class LambdaTestEcommerceTest extends BaseTest{
 
     @Test
-    public void testMainPage() throws InterruptedException {
+    public void testNavigationToBlogsMenu() {
         getDriver().get("https://ecommerce-playground.lambdatest.io/");
         final var mainPage = new MainPage();
         mainPage.openShopByCategoryMenu();
         final var blogPage = mainPage.navigateToBlogs();
-//        Thread.sleep(2000);
         assertEquals(blogPage.pageHeader(), "LATEST ARTICLES");
     }
 

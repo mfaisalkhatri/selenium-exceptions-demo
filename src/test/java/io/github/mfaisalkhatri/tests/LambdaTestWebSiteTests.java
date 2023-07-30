@@ -13,7 +13,6 @@ public class LambdaTestWebSiteTests extends BaseTest {
     public void testHomePage() {
         getDriver().get("https://www.lambdatest.com");
         final HomePage homePage = new HomePage();
-        //homePage.clickOnVideoLink(); //Throws ElementClickInterceptionException
         homePage.clickOnVideoLinkUsingJSExecutor();
         assertTrue(homePage.videoCloseBtn().isDisplayed());
     }
