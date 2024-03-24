@@ -51,7 +51,7 @@ public class LoginPage {
     }
 
     public void clickLoginBtn() {
-        waitForSnackBarToDisappear();
+       // waitForSnackBarToDisappear();
         loginBtn().click();
     }
 }

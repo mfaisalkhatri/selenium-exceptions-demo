@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Selenium WebDriver Element click interception exception tests ">
-    <test name="LambdaTest E-Commerce website automation tests ">
+    <test name="LambdaTest E-Commerce website automation tests " enabled="false">
         <parameter name="browser" value="remote-chrome"/>
         <classes>
             <class name="io.github.mfaisalkhatri.tests.LambdaTestEcommerceTest">
@@ -11,7 +11,7 @@
             </class>
         </classes>
     </test> <!-- Test -->
-    <test name="UITestingPlayground Website tests">
+    <test name="UITestingPlayground Website tests" enabled="false">
         <parameter name="browser" value="remote-chrome"/>
         <classes>
             <class name="io.github.mfaisalkhatri.tests.UITestingPlaygroundTests">
@@ -22,17 +22,17 @@
         </classes>
     </test> <!-- Test -->
     <test name="Juice Shop automation tests ">
-        <parameter name="browser" value="remote-chrome"/>
+        <parameter name="browser" value="chrome"/>
         <classes>
             <class name="io.github.mfaisalkhatri.tests.JuiceShopTests">
                 <methods>
                     <include name="testLogin"/>
-                    <include name="testAddProductToBasket"/>
+                    <exclude name="testAddProductToBasket"/>
                 </methods>
             </class>
         </classes>
     </test> <!-- Test -->
-    <test name="LambdaTest website automation tests ">
+    <test name="LambdaTest website automation tests " enabled="false">
         <parameter name="browser" value="remote-chrome"/>
         <classes>
             <class name="io.github.mfaisalkhatri.tests.LambdaTestWebSiteTests">

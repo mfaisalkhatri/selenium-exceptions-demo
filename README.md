@@ -21,6 +21,9 @@
 5. Using Selenium WebDriver's _Actions_ class
 6. Maximizing the browser window
 
+Checkout [How to Handle ElementClickInterceptedException in Selenium Java](https://www.lambdatest.com/blog/elementclickinterceptedexception-in-selenium-java/) for a detailed explanation. 
+
+
 ## Running the Tests
 
 By default, tests would be running on LambdaTest Platform using the `browser` value `remote-chrome`.
