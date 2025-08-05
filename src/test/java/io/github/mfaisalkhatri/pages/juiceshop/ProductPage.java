@@ -1,27 +1,29 @@
 package io.github.mfaisalkhatri.pages.juiceshop;
 
+import static io.github.mfaisalkhatri.setup.DriverManager.getDriver;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import static io.github.mfaisalkhatri.setup.DriverManager.getDriver;
-
 public class ProductPage {
 
-    private WebElement appleJuiceAddToBasketBtn() {
-        return getDriver().findElement(By.cssSelector("mat-grid-tile:nth-child(1) > div > mat-card > div:nth-child(2) > button"));
+    public void addAppleJuiceToCart () {
+        overlay ().click ();
+        appleJuiceAddToBasketBtn ().click ();
     }
 
-    private WebElement overlay() {
-        return getDriver().findElement(
-                By.cssSelector(".cdk-overlay-backdrop.cdk-overlay-transparent-backdrop.cdk-overlay-backdrop-showing"));
+    public String itemsInBasket () {
+        return getDriver ().findElement (By.cssSelector ("span.warn-notification"))
+            .getAttribute ("innerText");
     }
 
-    public void addAppleJuiceToCart() {
-        overlay().click();
-        appleJuiceAddToBasketBtn().click();
+    private WebElement appleJuiceAddToBasketBtn () {
+        return getDriver ().findElement (
+            By.cssSelector ("mat-grid-tile:nth-child(1) > div > mat-card > div:nth-child(2) > button"));
     }
 
-    public String itemsInBasket() {
-        return getDriver().findElement(By.cssSelector("span.warn-notification")).getAttribute("innerText");
+    private WebElement overlay () {
+        return getDriver ().findElement (
+            By.cssSelector (".cdk-overlay-backdrop.cdk-overlay-transparent-backdrop.cdk-overlay-backdrop-showing"));
     }
 }
