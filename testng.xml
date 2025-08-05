@@ -10,7 +10,7 @@
                 </methods>
             </class>
         </classes>
-    </test> <!-- Test -->
+    </test>
     <test name="UITestingPlayground Website tests" enabled="false">
         <parameter name="browser" value="remote-chrome"/>
         <classes>
@@ -20,7 +20,7 @@
                 </methods>
             </class>
         </classes>
-    </test> <!-- Test -->
+    </test>
     <test name="Juice Shop automation tests ">
         <parameter name="browser" value="chrome"/>
         <classes>
@@ -31,7 +31,7 @@
                 </methods>
             </class>
         </classes>
-    </test> <!-- Test -->
+    </test>
     <test name="LambdaTest website automation tests " enabled="false">
         <parameter name="browser" value="remote-chrome"/>
         <classes>
@@ -41,5 +41,5 @@
                 </methods>
             </class>
         </classes>
-    </test> <!-- Test -->
+    </test>
 </suite>
