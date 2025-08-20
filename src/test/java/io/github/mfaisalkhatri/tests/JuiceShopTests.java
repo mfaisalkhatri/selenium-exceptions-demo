@@ -20,7 +20,7 @@ public class JuiceShopTests extends BaseTest {
 
     @Test
     public void testLogin () {
-        getDriver ().get ("https://juice-shop.herokuapp.com/#/");
+        getDriver ().get ("http://localhost:3000");
         final var loginPage = new HomePage ().navigateToLoginPage ();
         this.productPage = loginPage.login ("demo+1@gmail.com", "Juice@1234");
         assertTrue (loginPage.checkLogoutLinkIsDisplayed ());
